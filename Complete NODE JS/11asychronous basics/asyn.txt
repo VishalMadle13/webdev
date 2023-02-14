@@ -1,0 +1,11 @@
+--Synchronous 
+  In Synchronous operation tasks are performed at a time
+
+  ex. as sj=hown in img
+  first load/run users.. code after completion products.. code will load and then cities..
+  but 
+
+--Asynchronous  
+  In Asynchronous ,second task do not wait to finish first task
+
+  ex. first load users code then after some load product code before completion of users code and then cities code will load

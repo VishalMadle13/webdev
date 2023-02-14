@@ -1,0 +1,60 @@
+body
+{
+    background-color: rgb(52, 52, 52);
+}
+
+.container
+{
+ 
+
+    background-color: rgb(241, 177, 0);
+    height: 20vh;
+    width: 75vw;
+    margin: auto;
+    display: block;
+    
+
+}
+
+.text-center
+{
+    text-align: center;
+    margin-top: 300px;
+    padding: 20px 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.list-group
+{
+   
+    margin: auto;
+    display: block;
+}
+
+.list-group-items
+{
+    background-color: #fff;
+    height: 40px;
+    width: 600px;
+  border: solid;
+    font-size:25px;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.float-right
+{
+    float: right;
+}
+
+.btn
+{
+    height: 40px;
+    width: 120px;
+    background-color: rgb(60, 209, 60);
+    margin: 18px 282px;
+    display: block;
+    font-weight: bolder;
+    font: 1em sans-serif ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

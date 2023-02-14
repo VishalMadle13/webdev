@@ -1,0 +1,138 @@
+
+*
+{
+    margin: auto;
+    padding: auto;
+    
+}
+
+
+body
+{
+    background-color: rgb(87, 84, 84);
+    height: fit-content;
+    width: fit-content;
+    display: grid;
+    place-items: center;
+    
+} 
+
+label
+{
+    font-size: 40px;
+    color: rgb(234, 239, 139);
+}
+
+#sbmt
+{
+    height: 40px;
+    width: 90px;
+    
+}
+.container
+{
+    background-color: rgb(255, 146, 3);
+    margin: 208px 241px;
+    padding: 46px;
+    display: block;
+    height: 48vh;
+    width: 55vw;
+}
+
+#tempValue
+{
+    height: 50px;
+    width: 250px;
+    font-size: 40px;
+}
+
+.input
+{
+    height: 51px;
+    display: flex;
+    width: 465px;
+    background-color: antiquewhite;
+    margin: 96px 3px;
+}
+
+.inputValue
+{
+    float: right;
+    height: 50px;
+    width: 250px;
+    font-size: 40px;
+    border: solid black;
+}
+
+
+.inputUnit
+{
+    float: left;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    height: 48px;
+    width: 204px;
+    
+
+}
+
+.flex
+{
+    display: flex;
+     margin: auto;
+     background-color: #fff;
+     border: solid black;
+     /* width: fit-content; */
+}
+
+
+
+#tempUnit
+{
+    height: 48px;
+    width: 204px;
+    font-size: 30px;
+}
+
+.lable
+{
+    margin: 13px 2px;
+    color: black;
+    font-size: 30px;
+    
+}
+
+.ans
+{
+    height: 51px;
+    display: flex;
+    width: 465px;
+    background-color: antiquewhite;
+    margin: 96px 3px;
+}
+
+#ansValue
+{
+    height: 50px;
+    width: 250px;
+    font-size: 40px;
+    border: solid black;
+}
+
+.ansUnit
+{
+    float: right;
+    justify-content: center;
+    align-items: center;
+    border: solid;
+    height: 48px;
+    width: 204px;
+}
+
+#anstempUnit
+{
+    height: 48px;
+    width: 204px;
+    font-size: 30px;
+}

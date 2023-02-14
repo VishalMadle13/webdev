@@ -1,0 +1,64 @@
+body
+{
+    background-color: rgb(35, 35, 35);
+    width: 100vw;
+    height: 100vh;
+}
+
+.color-hover
+{
+  display: flex;
+  padding: 81px 58px;
+  margin: 18px 70px;
+  align-content: center;
+}
+
+.color
+{
+    display: block;
+    cursor: pointer;
+    border: solid black;
+    padding: 20px 100px;
+    margin: 30px 2px;
+    box-shadow: 2px 8px;
+    scrollbar-shadow-color: rgb(231, 63, 63);
+}
+
+
+
+.red
+{
+    background-color: rgb(219, 42, 42);
+
+}
+
+.cyan
+{
+    background-color:rgb(67, 195, 195);
+}
+
+.violet
+{
+    background-color: rgb(234, 102, 234);
+}
+
+.orange
+{
+    background-color: rgb(223, 165, 57);
+}
+
+.pink
+{
+    background-color: pink;
+}
+
+.center
+{
+    height: 350px;
+    width: 350px;
+    align-content: center;
+    background-color: #fff;
+    border-radius: 200px;
+    margin: 0 486px;
+    border: solid white;
+}

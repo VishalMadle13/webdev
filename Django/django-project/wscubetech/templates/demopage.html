@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+      <div class="marquee" style="height: 25px; width: 80vw;">
+         
+         
+        <marquee behavior="scroll" direction="left" height="25px" style="background-color:rgb(225, 236, 249); color: black; width:50vw " onmouseover="stop()" onmouseout="start()">
+          {% for d in newsData %}
+             <a href="/newsDetails/{{ d.news_slug }}">{{ d.news_title}} &nbsp; &nbsp;&nbsp;</a>
+          {% endfor %}
+        </marquee>
+      </div>
+<br>
+<br>
+          
+<div class="col-12">
+  <form method="get">
+  <input type="text" name="servicename" value=""/>
+  <input type="submit" value="search">
+  </form>
+</div>
+
+
+        {% for n in serviceData %}
+        <div class="col-lg-4 col-md-6">
+          <span class="{{n.service_icon}}"></span>
+          <h4>
+            <a href="#">{{n.service_title | safe }}</a>
+          </h4>
+          <p>
+            {{n.service_des}}
+          </p>
+        </div>
+        {% empty %}
+        no data found
+        {% endfor %}
+
+        <!-- <div class="col-lg-4">
+          <span class="lnr lnr-license">icon2</span>
+          <h4>
+            <a href="#">Profesional Expert</a>
+          </h4>
+          <p>
+            Usage of the Internet is more common due to rapid advantage in tecknology
+          </p>
+        </div> -->
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination">
+            {% if serviceData.has_previous%}
+            <li class="page-item"><a class="page-link" href="/demopage/?page={{serviceData.previous_page_number}}">Previous</a></li> <!--previous_  next_ inbuilt keyword -->
+            {% endif %}
+            <li class="page-item"><a class="page-link" href="/demopage/?page=1">1</a></li>
+            <li class="page-item"><a class="page-link" href="/demopage/?page=2">2</a></li>
+            <li class="page-item"><a class="page-link" href="/demopage/?page=3">3</a></li>
+            {% if serviceData.has_next %}
+            <li class="page-item"><a class="page-link" href="/demopage/?page={{serviceData.next_page_number}}">Next</a></li>
+            <!-- <li class="page-item"><a class="page-link" href="/demopage/?page=lastpage">last</a></li> -->
+            {% endif %}            
+
+          </ul>
+        </nav>
+
+        
+    </div>
+</div>
+
+{% endblock %}

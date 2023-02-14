@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulb</title>
+</head>
+<body style="background-color: rgb(98, 99, 176)">
+    <link rel="stylesheet" href="style.css">
+    <div style="margin: 100px 500px;
+    border-style: solid;
+    padding: 32px 0px;
+    background: white;
+    height: 310px;
+    width: 363px;">
+        <h1 style="padding: 0 147px;">Bulb</h1>
+
+    <button onclick="document.getElementById('bulb').src='bulbOn.png'" style="cursor: pointer;">Turn on the light</button>
+    <img id="bulb" src="bulbOff.png">
+    <button onclick="document.getElementById('bulb').src='bulbOff.png'" style="cursor: pointer;">Turn off the light</button>
+    
+    </div>
+    <div class="ChangeFont">
+        <div class="containerForText">
+            <p id="LotusText">
+                History of the lotus flower
+                Back in Egyptians times, the lotus flower was very important in their religion.
+                Meaning creation and rebirth, it was a symbol of the sun, because at nightfall it 
+                closes and goes beneath the water and at dawn it climbs up above the water and reopens. 
+                It was the only plant to flower and fruit at the same time, as it would emerge as pure 
+                white from the depths of the muddy swamp and grow above the water. One myth that 
+                revolves around the lotus is during creation time a giant lotus flower grew out of a 
+                pond and from it the sun rose. Also, throughout ancient Egypt the lotus has been 
+                pictured in various works of art.  It would act as a border to outline a section of 
+                artwork, or held in the hands of a god or human. The lotus was also used in their math, 
+                helping to count to high decrees. One lotus would act as 1,000 and two lotus
+            </p>
+            
+
+        </div>
+        <button id="b3" class="Button" type="button" onclick="Style1()">Clikc here to change font style </button>
+
+
+    </div>
+    <div class="Ctime">
+        
+        <button id="b4" onclick="document.getElementById('time').innerHTML=Date();">Current time</button>
+        <p id="time"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+

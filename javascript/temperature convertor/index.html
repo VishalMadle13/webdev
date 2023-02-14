@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>temperature converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- <div class="container">   -->
+      <form id="tempCalc" onsubmit="calculateTemp(); return false">
+        <!-- <div class="lable"> -->
+            <label for="tempValue1">Enter the temperature value</label>
+            <br />
+        <!-- </div> -->
+        <!-- <div class="input"> -->
+           <!-- <div class="inputValue"> -->
+            <br>
+             <input type="number" id="tempValue" name="tempValue2">
+           <!-- </div> 
+           <div class="inputUnit"> -->
+            <select name="tempUnit" id="tempUnit">
+            <option value="fah">°fahrenheit</option>
+            <option value="cel">°celcius</option>
+            </select>
+           <!-- </div>
+        </div> -->
+        <br><br>
+        <input type="submit" name="tempValue3" id="sbmt">
+        <span class="resultContainer"></span>
+    </form>
+<!-- 
+        <div class="ansLable">
+            <label for="ansValue">Ans</label>
+        </div>
+        <div class="ans">
+            <div class="ansValue" id="ansValue">3454</div>
+            <div class="ansUnit">
+                <select name="anstempUnit" id="anstempUnit">
+                    <option value="cel">°celcius</option>
+                    <option value="fah">°fahrenheit</option>
+                </select>
+            </div>
+        </div> -->
+    <!-- </div> -->
+
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+

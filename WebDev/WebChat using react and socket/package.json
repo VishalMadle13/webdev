@@ -1,0 +1,16 @@
+{
+  "name": "webchat-using-react-and-socket",
+  "version": "1.0.0",
+  "description": "this is realtime webchat application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vishal",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "socket.io": "^4.5.1"
+  }
+}

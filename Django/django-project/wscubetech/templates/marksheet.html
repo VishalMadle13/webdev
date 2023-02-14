@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+   
+ <h1>Marksheet calculator</h1>
+<div class="container">
+
+    <form method="post">
+        {% csrf_token %}
+
+     <label>Math</label>
+    <input type="text" name="sub1" value="{{s1}}"><br>
+     <label>Science</label>
+    <input type="text" name="sub2" value="{{s2}}"><br>
+     <label>Marathi</label>
+    <input type="text" name="sub3" value="{{s3}}"><br>
+     <label>English</label>
+    <input type="text" name="sub4" value="{{s4}}"><br>
+     <label>Envirnmental Science</label>
+    <input type="text" name="sub5" value="{{s5}}"><br>
+ <br>
+    <button type="submit">Marksheet</button><br>
+
+    <label for="total">Total Marks</label>
+    <input type="text" name="total" value="{{t}}"><br>
+
+    <label for="percent">Percentage</label>
+    <input type="text" name="percent" value="{{percent}}"><br>
+    <label for="division">Division</label>
+    <input type="text" name="division" value="{{division}}"><br>
+
+    </form>
+
+
+
+
+    
+</div>
+
+{% endblock %}
+

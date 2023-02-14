@@ -1,0 +1,21 @@
+
+//core  modules
+// FS :  FileSystem
+// buffer
+// http
+// console
+
+
+
+
+*global modules
+-modules that need not to import 
+ex.
+console.log("hii");
+
+
+*non gloable modules 
+-modules that need to import 
+ex.
+const fs = require('fs');
+fs.writeFileSync("hello.txt","vishal");

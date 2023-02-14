@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user form</title>
+</head>
+<body>
+    <h1>User Form</h1>
+    <div class="form">
+        <div class="row">
+            <div class="col-12">
+                <form method="post" action="{% url 'submitform' %}">
+                    {% csrf_token %}
+                   
+                    <div>
+                        <lable for="">value1</lable>
+                        <input type="text" name="num1" value="{{n1}}">
+                    </div>
+                    <br>
+                    <div>
+                        <lable for="">value2</lable>
+                        <input type="text" name="num2" value="{{n2}}">
+                    </div>
+                    <br>
+                    <div class="pt-4">
+                       <button type="submit">save</button>
+                    </div>
+                    <div>
+                        <p>Output </p>
+                        <input type="text" value="{{output}}"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
